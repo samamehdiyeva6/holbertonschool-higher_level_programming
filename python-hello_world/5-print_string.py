@@ -2,4 +2,4 @@
 str = "Holberton School"
 repeated = 3 * str
 result = repeated[:9]
-print(result)
+print(str+result)
