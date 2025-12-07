@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-if __name__ = __main__:
-    from 1-calculation import add, sub, mul, div
+def add(a, b):
+    return a + b
 
-    a = 10
-    b = 5
+def sub(a, b):
+    return a - b
 
-    print("{} + {} = {}".format(a, b, add(a, b)))
-    print("{} - {} = {}".format(a, b, sub(a, b)))
-    print("{} * {} = {}".format(a, b, mul(a, b)))
-    print("{} / {} = {}".format(a, b, div(a, b)))
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    return a / b
