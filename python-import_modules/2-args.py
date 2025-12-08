@@ -10,5 +10,5 @@ if __name__ == "__main__":
         print("0 arguments.")
 
     list = argv.split()
-    for i in range(1, length+1):
-        print("{}: {}".format(i, list[i-1]))
+    for i in range(0, length):
+        print("{}: {}".format(i+1, list[i]))
