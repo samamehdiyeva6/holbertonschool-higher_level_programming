@@ -3,9 +3,9 @@ if __name__ == "__main__":
     argv = "Hello"
     list = argv.split()
     if len(list) % 2 == 0:
-        print(f"{length} arguments:")
+        print(f"{len(list)} arguments:")
     elif len(list) % 2 != 0:
-        print(f"{length} argument:")
+        print(f"{len(list)} argument:")
     else:
         print("0 arguments.")
 
