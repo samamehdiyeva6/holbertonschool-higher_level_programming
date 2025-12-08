@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from argv_2 import arg
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     argv = "Hello"
     length  = len(argv)
     if length % 2 == 0:
