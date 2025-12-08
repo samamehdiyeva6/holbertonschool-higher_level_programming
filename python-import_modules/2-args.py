@@ -9,6 +9,6 @@ if __name__ == "__main__":
     else:
         print("0 arguments.")
 
-    list = argv.split()
+    list = argv.split(" ")
     for i in range(0, length):
         print("{}: {}".format(i+1, list[i]))
