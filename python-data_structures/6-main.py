@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
 
-if __name__ = "__main__":
+if __name__ =="__main__":
     matrix = [
         [1, 2, 3],
         [4, 5, 6],

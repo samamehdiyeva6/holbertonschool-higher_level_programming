@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 new_in_list = __import__('4-new_in_list').new_in_list
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     my_list = [1, 2, 3]
     idx = 1
     new_element = 4
