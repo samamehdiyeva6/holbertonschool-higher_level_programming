@@ -4,8 +4,8 @@ def uniq_add(my_list=[]):
     for i in my_list:
         count = 0
         for j in new_list:
-            if my_list[i] == new_list[j]:
+            if i == j:
                 count+=1
         if count == 0:
-            new_list.append(my_list[i])
+            new_list.append(i)
     return new_list
