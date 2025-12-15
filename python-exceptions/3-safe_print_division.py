@@ -2,6 +2,7 @@
 def safe_print_division(a, b):
     try:
         res = a / b
+        return res
     except Exception:
         return None
     finally:
