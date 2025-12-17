@@ -9,17 +9,16 @@ class Square:
         """Initializes a square with a given size."""
 
         try:
-            if isinstance(size, int):
-                self.__size = size
-            else:
+            if not isinstance(size, int):
                 raise TypeError
-        except TypeError:
-            print("size must be an integer")
 
-        try:
             if size < 0:
-                self.__size = size
-            else:
                 raise ValueError
+            
+            else:
+                self.__size = size
+
         except ValueError:
             print("size must be >= 0")
+        except TypeError:
+            print("size must be an integer")
