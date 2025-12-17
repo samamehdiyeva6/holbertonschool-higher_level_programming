@@ -10,10 +10,15 @@ class Square:
 
         try:
             if not isinstance(size, int):
-                print("size must be an integer")
+                raise TypeError
 
             if size < 0:
-                print("size must be >= 0")
+                raise ValueError
             
             else:
                 self.__size = size
+
+        except ValueError:
+            print("size must be >= 0")
+        except TypeError:
+            print("size must be an integer")
