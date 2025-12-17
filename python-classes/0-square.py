@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-class Square():
-    square = {}
-    print("{}".format(square))
+class Square:
+    pass
