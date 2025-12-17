@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 class Square():
-    square = {}
-    print("{}".format(square))
+    if __name__ == "__main__":
+        square = {}
+        print("{}".format(square))
