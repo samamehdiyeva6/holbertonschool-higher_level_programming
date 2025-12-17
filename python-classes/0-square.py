@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 class Square():
-    square = 4
+    square = {}
     print(square)
