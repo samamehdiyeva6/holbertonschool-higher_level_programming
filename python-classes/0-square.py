@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-class Square():
-    square = {}
-    print(square)
+"""This is an empty Square class."""
+class Square:
+    """Defines an empty square."""
+    pass
