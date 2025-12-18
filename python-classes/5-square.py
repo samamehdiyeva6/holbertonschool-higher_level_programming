@@ -37,6 +37,7 @@ class Square:
         else:
             self.__size = value
 
+    """hgjhg"""
     def my_print(self):
         if self.__size == 0:
             print("\n")
