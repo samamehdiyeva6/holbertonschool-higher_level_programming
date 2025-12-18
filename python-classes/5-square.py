@@ -41,8 +41,5 @@ class Square:
         if self.__size == 0:
             print("\n")
         else:
-            string = ""
             for i in range(self.__size):
-                string += "#"
-            for j in range(self.__size):
-                print(string + "\n")
+            print("#" * self.__size)
