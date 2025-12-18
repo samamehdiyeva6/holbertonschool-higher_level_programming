@@ -23,6 +23,7 @@ class Square:
     def size(self):
         return self.__size
     
+    @property
     def size(self, value):
         """Initializes a square with a given size."""
 
