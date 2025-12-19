@@ -46,6 +46,7 @@ class Square:
                 print("#" * self.__size)
 
     def __init__(self, size=0, position=(0, 0)):
+        "sduhfushd"
         self.__size = size
         self.__position = position
 
