@@ -5,18 +5,6 @@
 class Square:
     """Defines a square with a size attribute."""
 
-    def __init__(self, size=0):
-        """Initializes a square with a given size."""
-
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-
-        if size < 0:
-            raise ValueError("size must be >= 0")
-
-        else:
-            self.__size = size
-
     def area(self):
         return self.__size ** 2
 
@@ -60,5 +48,7 @@ class Square:
     @position.setter
     def position(self, value):
         "ghfhfh"
-        if not isinstance(value, tuple) or not all(isinstance(i, int) and i >= 0 for i in value):
+        if not isinstance(value, tuple) or or len(value) != 2 or not all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = position
