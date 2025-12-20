@@ -12,6 +12,7 @@ class Square:
 
     @property
     def size(self):
+        "bkhh"
         return self.__size
 
     @size.setter
@@ -29,6 +30,7 @@ class Square:
     
     @property
     def position(self):
+        "jhvjv"
         return self.__position
 
     @position.setter
@@ -40,6 +42,7 @@ class Square:
             self.__position = value
 
     def area(self):
+        "jhfhgf"
     return self.__size ** 2
 
     """hgjhg"""
