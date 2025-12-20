@@ -44,6 +44,7 @@ class Square:
 
     """hgjhg"""
     def my_print(self):
+        "jnkhjh"
         if self.__size == 0:
             print("")
         
