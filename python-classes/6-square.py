@@ -5,8 +5,10 @@
 class Square:
     """Defines a square with a size attribute."""
 
-    def area(self):
-        return self.__size ** 2
+    def __init__(self, size=0, position=(0, 0)):
+            "sduhfushd"
+            self.size = size
+            self.position = position
 
     @property
     def size(self):
@@ -24,23 +26,7 @@ class Square:
 
         else:
             self.__size = value
-
-    """hgjhg"""
-    def my_print(self):
-        if self.__size == 0:
-            print("")
-        else:
-            if self.__position[1] > 0:
-                print() *  self.__position[1]
-
-            for i in range(self.__size):
-                print("#" * self.__size)
-
-    def __init__(self, size=0, position=(0, 0)):
-        "sduhfushd"
-        self.__size = size
-        self.__position = position
-
+    
     @property
     def position(self):
         return self.__position
@@ -52,3 +38,17 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+
+    def area(self):
+    return self.__size ** 2
+
+    """hgjhg"""
+    def my_print(self):
+        if self.__size == 0:
+            print("")
+        
+        print("") for i in range(0, self.__position[1])
+        for j in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
