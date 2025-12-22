@@ -67,4 +67,4 @@ class Rectangle:
         return Rectangle(self.__width, self.__height)
 
     def __repr__(self):
-        return Rectangle.eval()
+        return Rectangle.eval(self)
