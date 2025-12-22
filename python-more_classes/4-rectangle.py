@@ -64,4 +64,4 @@ class Rectangle:
                 print("#", end="")
 
     def __repr__(self):
-        return Rectangle.print()
+        return Rectangle(self.__width, self.__height)
