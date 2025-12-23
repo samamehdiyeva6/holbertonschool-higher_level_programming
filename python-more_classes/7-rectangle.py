@@ -5,7 +5,7 @@
 class Rectangle:
     "sdfsdfsd"
     number_of_instances = 0
-    print_symbol = "C"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         "jhkdhf"
@@ -47,7 +47,7 @@ class Rectangle:
             return 0
         return 2 * (self.__width + self.__height)
 
-    def __str__(self):
+    def __str__(self, print_symbol):
         if self.__width == 0 or self.__height == 0:
             return ""
 
@@ -57,7 +57,7 @@ class Rectangle:
 
         return "\n".join(lines)
 
-    def print(self):
+    def print(self, print_symbol):
         if self.__height == 0 or self.__width == 0:
             print("")
             return
