@@ -53,7 +53,7 @@ class Rectangle:
 
         lines = []
         for h in range(self.__height):
-            lines.append("#" * self.__width)
+            lines.append(Rectangle.print_symbol * self.__width)
 
         return "\n".join(lines)
 
