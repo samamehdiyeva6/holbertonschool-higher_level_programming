@@ -63,8 +63,5 @@ class Rectangle:
             for w in range(0, self.__width):
                 print("#", end="")
 
-    def eval(self):
-        return Rectangle(self.__width, self.__height)
-
     def __repr__(self):
         print("Rectangle({}, {})".format(self.__width, self.__height))
