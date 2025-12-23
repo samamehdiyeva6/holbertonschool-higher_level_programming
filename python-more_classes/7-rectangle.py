@@ -52,8 +52,9 @@ class Rectangle:
             return ""
 
         lines = []
+        symbol = str(getattr(self, "print_symbol", Rectangle.print_symbol))
         for h in range(self.__height):
-            lines.append(Rectangle.print_symbol * self.__width)
+            lines.append(symbol * self.__width)
 
         return "\n".join(lines)
 
@@ -61,9 +62,10 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             print("")
             return
+        symbol = str(getattr(self, "print_symbol", Rectangle.print_symbol))
         for h in range(0, self.__height):
             for w in range(0, self.__width):
-                print(Rectangle.print_symbol, end="")
+                print(symbol, end="")
 
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
