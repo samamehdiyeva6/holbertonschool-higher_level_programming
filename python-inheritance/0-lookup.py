@@ -4,4 +4,4 @@
 
 def lookup(obj):
     "sdhgfjds"
-    return obj
+    return list(obj)
