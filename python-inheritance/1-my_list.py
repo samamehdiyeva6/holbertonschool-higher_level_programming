@@ -5,4 +5,4 @@
 class MyList(list):
     "jhkkkkh"
     def print_sorted(self):
-        return list.sort()
+        return list.sort("1-my_list.txt")
