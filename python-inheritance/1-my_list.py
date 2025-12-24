@@ -3,5 +3,6 @@
 
 
 class MyList(list):
+    "jhkkkkh"
     def print_sorted(self):
         return list.sort()
