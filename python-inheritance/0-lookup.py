@@ -4,4 +4,4 @@
 
 def lookup(obj):
     "sdhgfjds"
-    return obj.__dict__
+    return list(obj.__dict__)
