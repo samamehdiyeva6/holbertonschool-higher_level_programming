@@ -1,0 +1,27 @@
+Test 1: Valid integers
+bg = BaseGeometry()
+bg.integer_validator("my_int", 12)
+bg.integer_validator("width", 89)
+print("Test 1 passed ✅")
+
+Test 2: Non-integer value
+try:
+    bg.integer_validator("name", "John")
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+Test 3: Zero value
+try:
+    bg.integer_validator("age", 0)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+Test 4: Negative value
+try:
+    bg.integer_validator("distance", -4)
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
+
+Test 5: Another positive integer
+bg.integer_validator("height", 5)
+print("Test 5 passed ✅")
