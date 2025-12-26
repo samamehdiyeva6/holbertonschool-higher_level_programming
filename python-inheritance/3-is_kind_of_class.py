@@ -5,4 +5,4 @@
 def is_kind_of_class(obj, a_class):
     "sadsadsa"
     if obj is None:
-    return obj is a_class or isinstance(obj, a_class)
+        return obj is a_class or isinstance(obj, a_class)
