@@ -4,9 +4,6 @@
 
 def is_same_class(obj, a_class):
     "xcvzxvzxc"
-    if isinstance(obj, a_class) and not isinstance(obj, bool):
-        return True
-    elif obj == None:
+    if obj == None:
         return False
-    else:
-        return False
+    return type(obj) is a_class
