@@ -4,7 +4,7 @@
 
 def is_same_class(obj, a_class):
     "xcvzxvzxc"
-    if isinstance(obj, a_class):
+    if isinstance(obj, a_class) and not isinstance(obj, bool):
         return True
     else:
         return False
