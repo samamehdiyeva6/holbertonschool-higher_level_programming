@@ -4,4 +4,5 @@ Rectangle = __import__('7-base_geometry').Rectangle
 
 
 class Square(Rectangle):
+    "jfgfhj"
     pass
