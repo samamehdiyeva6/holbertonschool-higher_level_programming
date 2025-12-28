@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class Animal(ABC):
     @abstractmethod
-    def sound() -> None:
+    def sound(self) -> str:
         ...
 
 
@@ -12,5 +12,5 @@ class Dog(Animal):
         return "Bark"
 
 class Cat(Animal):
-    def sound():
+    def sound(self):
         return "Meow"
