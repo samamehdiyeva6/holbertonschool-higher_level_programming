@@ -4,5 +4,5 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    "jfgfhj"
-    pass
+    def area(self):
+        return self.__width ** 2
