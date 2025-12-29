@@ -12,9 +12,7 @@ class Shape(ABC):
 
 class Circle(Shape):
     def __init__(self, radius):
-        if radius < 0:
-            raise ValueError("radius must be >= 0")
-        self.radius = radius
+        self.radius = max(0, radius)
 
     def area(self):
         return math.pi * (self.radius ** 2)
@@ -37,5 +35,6 @@ class Rectangle(Shape):
 def shape_info(shape):
     print("Area:", shape.area())
     print("Perimeter:", shape.perimeter())
+
 
 
