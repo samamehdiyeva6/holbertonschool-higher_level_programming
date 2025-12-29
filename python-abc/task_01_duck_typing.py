@@ -12,7 +12,7 @@ class Shape(ABC):
 
 class Circle(Shape):
     def __init__(self, radius):
-        if self.radius > 0:
+        if radius > 0:
             self.radius = radius
 
     def area(self):
@@ -36,3 +36,4 @@ class Rectangle(Shape):
 def shape_info(shape):
     print("Area:", shape.area())
     print("Perimeter:", shape.perimeter())
+
