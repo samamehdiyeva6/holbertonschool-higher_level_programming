@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
 from abc import ABC, abstractmethod
 import math
@@ -36,6 +35,7 @@ class Rectangle(Shape):
 def shape_info(shape):
     print("Area:", shape.area())
     print("Perimeter:", shape.perimeter())
+
 
 
 
@@ -79,5 +79,3 @@ class Rectangle(Shape):
 def shape_info(shape):
     print("Area:", shape.area())
     print("Perimeter:", shape.perimeter())
-
->>>>>>> b1852ed (gitpusher)
