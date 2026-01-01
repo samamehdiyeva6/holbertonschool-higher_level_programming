@@ -16,3 +16,4 @@ class CountedIterator:
         value = next(self.iterator)   # may raise StopIteration
         self.count += 1
         return value
+
