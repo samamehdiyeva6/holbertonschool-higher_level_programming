@@ -13,4 +13,6 @@ class CountedIterator:
         return self
 
     def __next__(self):
-        return next(self.iterable)
+    value = next(self.iterable)   # element götür
+    self.count += 1               # SAYI ARTIR
+    return value
