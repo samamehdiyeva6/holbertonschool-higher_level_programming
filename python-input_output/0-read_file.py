@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"hgjgjg"
 
 def read_file(filename=""):
     "hfjfjf"
