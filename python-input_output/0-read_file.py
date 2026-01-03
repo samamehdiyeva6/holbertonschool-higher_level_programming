@@ -2,4 +2,5 @@
 
 def read_file(filename=""):
     "hfjfjf"
-    return with open (filename, encoding = "utf-8")
+    with open (filename, encoding = "utf-8") as f:
+        print(f.read())
