@@ -11,7 +11,7 @@ class Bird:
     def habitat(self):
         print("The bird lives in the sky")
 
-class FlyingFish:
+class FlyingFish(Bird, Fish):
     def fly(self):
         print("The flying fish is soaring!")
     def swim(self):
