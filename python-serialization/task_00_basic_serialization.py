@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+"dsgdsg"
+
+
+def serialize_and_save_to_file(data, filename):
+    with open(filename, 'w', encoding="utf-8") as f:
+        return json.dump(data, f)
+
+def load_and_deserialize(filename):
+    with open(filename, encoding="utf-8") as f:
+        return json.load(f)
