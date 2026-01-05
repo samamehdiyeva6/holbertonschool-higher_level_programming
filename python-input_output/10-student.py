@@ -12,6 +12,6 @@ class Student:
         if isinstance(attrs, list):
             for attr in attrs:
                 if isinstance(attr, str):
-                    self.__dict__.keys()
+                    return self.__dict__.keys()
         else:
             return self.__dict__
