@@ -10,11 +10,10 @@ class Student:
 
     def to_json(self, attrs=None):
         if isinstance(attrs, list):
-            count = 0
+            new_dict = {}
             for attr in attrs:
-                if isinstance(attr, str):
-                    count += 1
-            if count == len(attrs):
-                return self.__dict__.keys()
+                if isinstance(attr, str) and attr in self.__dict__:
+                    new_dict[attr] = self.__dict__[attr]
+            return new_dict
         else:
             return self.__dict__
