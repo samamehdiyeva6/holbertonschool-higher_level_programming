@@ -17,7 +17,7 @@ class CustomObject:
     def serialize(self, filename):
         try:
             with open(filename, "wb") as f:
-                return pickle.dump(obj, f)
+                return pickle.dump(self, f)
         except Exception:
             return None
 
