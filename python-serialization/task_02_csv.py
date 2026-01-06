@@ -9,5 +9,5 @@ def convert_csv_to_json(filename):
             json.dump(data, f, indent = 4)
             return True
 
-    except FileNotFoundError:
+    except Exception:
         return False
