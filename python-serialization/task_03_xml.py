@@ -9,3 +9,12 @@ def serialize_to_xml(dictionary, filename):
 
     tree = ET.ElementTree(root)
     tree.write(filename, encoding="utf-8", xml_declaration=True)
+
+def deserialize_from_xml(filename):
+    tree = ET.parse(filename)
+    root = ET.getroot()
+    result = {}
+
+    for child in root:
+        result[child.tag] = child.text
+    return result
