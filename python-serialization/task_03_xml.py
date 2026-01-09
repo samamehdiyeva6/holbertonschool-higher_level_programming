@@ -12,7 +12,7 @@ def serialize_to_xml(dictionary, filename):
 
 def deserialize_from_xml(filename):
     tree = ET.parse(filename)
-    root = ET.getroot()
+    root = tree.getroot()
     result = {}
 
     for child in root:
