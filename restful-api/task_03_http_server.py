@@ -26,7 +26,7 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
         else:
             self.send_response(404)
             self.end_headers()
-            self.wfile.write(b"Not Found")
+            self.wfile.write(b"Endpoint not found")
 
 server = HTTPServer(("localhost", 8000), SimpleAPIHandler)
 print("Server running on http://localhost:8000")
