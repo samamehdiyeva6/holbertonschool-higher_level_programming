@@ -24,12 +24,12 @@ def fetch_and_save_posts():
         posts = response.json()
 
         dict = []
-            for post in posts:
-                dict.append({
-                    "id": post["id"],
-                    "title": post["title"],
-                    "body": post["body"]
-                })
+        for post in posts:
+            dict.append({
+                "id": post["id"],
+                "title": post["title"],
+                "body": post["body"]
+            })
 
         with open("posts.csv", mode="w", newline="", encoding="utf-8") as file:
             writer = csv.DictReader(file, fieldnames = ["id", "title", "body"])
