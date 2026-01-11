@@ -11,7 +11,7 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(data).encode())
 
         elif self.path == "/":
-            data = {"message": "Welcome to the API"}
+            data = {"message": "Hello, this is a simple API!"}
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
