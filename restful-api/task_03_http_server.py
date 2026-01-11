@@ -4,11 +4,10 @@ import json
 class SimpleAPIHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/":
-            data = {"message": "Hello, this is a simple API!"}
             self.send_response(200)
-            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Type", "plain/text")
             self.end_headers()
-            self.wfile.write(json.dumps(data).encode())
+            self.wfile.write(b"Hello, this is a simple API!")
 
         elif self.path == "/data":
             data = {"name": "John", "age": 30, "city": "New York"}
