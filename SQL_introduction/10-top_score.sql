@@ -1,2 +1,2 @@
 -- sdfksdlk
-SELECT * FROM second_table LIMIT 10;
+SELECT score, name FROM second_table;
