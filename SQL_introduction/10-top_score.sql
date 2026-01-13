@@ -1,2 +1,2 @@
 -- sdfksdlk
-SHOW TABLE second_table;
+SELECT * FROM second_table LIMIT 10;
