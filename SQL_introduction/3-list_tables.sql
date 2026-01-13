@@ -1,2 +1,2 @@
 --kjdsfhlksdhj
-SHOW TABLES FROM DATABASE;
+SHOW TABLES;
