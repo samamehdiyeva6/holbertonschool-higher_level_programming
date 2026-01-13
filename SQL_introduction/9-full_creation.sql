@@ -10,3 +10,5 @@ VALUES(1, 'John', 10),
 VALUES(1, 'Alex', 3),
 VALUES(1, 'Bob', 14),
 VALUES(1, 'George', 8)
+
+SELECT * FROM second_table;
