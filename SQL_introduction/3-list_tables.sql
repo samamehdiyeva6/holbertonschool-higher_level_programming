@@ -1,0 +1,2 @@
+--kjdsfhlksdhj
+SHOW TABLES FROM DATABASE;
