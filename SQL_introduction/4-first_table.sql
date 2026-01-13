@@ -1,6 +1,6 @@
 -- jaskdjhska
-CREATE TABLE 4-first_table.sql
+CREATE TABLE IF NOT EXISTS 4-first_table.sql
 (
     id INT,
     name VARCHAR(256)
-) IF NOT EXISTS;
+);
