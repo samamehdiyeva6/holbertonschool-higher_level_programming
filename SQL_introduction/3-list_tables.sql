@@ -1,2 +1,2 @@
 --kjdsfhlksdhj
-SHOW TABLES mysql;
+SHOW TABLES;
