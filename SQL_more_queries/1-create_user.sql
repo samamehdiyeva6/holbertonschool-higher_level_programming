@@ -2,7 +2,7 @@
 CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
 
 -- Step 2: Grant all privileges on all databases and tables
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
 
 -- Step 3: Apply changes
 FLUSH PRIVILEGES;
