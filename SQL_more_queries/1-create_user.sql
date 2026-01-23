@@ -1,3 +1,8 @@
--- blabla
-CREATE USER IF NOT EXISTS user_0d_1 PRIVILEGES BY 'user_0d_1_pwd';
-GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
+-- Step 1: Create user if it doesn't exist
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+
+-- Step 2: Grant all privileges on all databases and tables
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost' WITH GRANT OPTION;
+
+-- Step 3: Apply changes
+FLUSH PRIVILEGES;
