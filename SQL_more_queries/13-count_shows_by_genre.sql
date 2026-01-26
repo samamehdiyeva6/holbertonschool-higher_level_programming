@@ -1,2 +1,2 @@
 -- dsfsdf
-SELECT tv_shows.title, COUNT(tv_show_genres.show_id) AS number_of_shows FROM tv_shows INNER JOIN tv_show_genres ON tv_shows.id=tv_show_genres.show_id ORDER BY COUNT(tv_show_genres.show_id) DESC;
+SELECT tv_shows.title, COUNT(tv_show_genres.show_id) AS number_of_shows FROM tv_shows INNER JOIN tv_show_genres ON tv_shows.id=tv_show_genres.show_id GROUP BY tv_shows.title ORDER BY COUNT(tv_show_genres.show_id) DESC;
