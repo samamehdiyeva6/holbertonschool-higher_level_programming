@@ -1,2 +1,2 @@
 -- djfksh
-SELECT cities.id, cities.name, states.name FROM cities ORDER BY cities.id
+SELECT cities.id, cities.name, s.name FROM cities INNER JOIN states s ORDER BY cities.id
