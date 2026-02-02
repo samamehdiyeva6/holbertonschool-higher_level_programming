@@ -5,11 +5,11 @@ let res = '';
 if (Number.isInteger(num)) {
   for (let i = 0; i < size; i++) {
     for (let j = 0; j < size; j++) {
-        res += 'X';
+      res += 'X';
     }
     console.log(res);
     res = '';
   }
 } else {
-    console.log('Missing size');
+  console.log('Missing size');
 }
