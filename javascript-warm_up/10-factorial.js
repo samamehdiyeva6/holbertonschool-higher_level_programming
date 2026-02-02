@@ -5,7 +5,7 @@ function factorial(a) {
   } else if (a === 1) {
     return 1;
   } else {
-    return a * factorial(a-1);
+    return a * factorial(a - 1);
   }
 }
 const a = Number(process.argv.slice(2));
