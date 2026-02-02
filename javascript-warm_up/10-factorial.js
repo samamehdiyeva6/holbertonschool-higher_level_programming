@@ -8,3 +8,5 @@ function factorial(a) {
     return factorial(a) * factorial(a-1);
   }
 }
+const a = Number(process.argv.slice(2));
+console.log(factorial(a));
