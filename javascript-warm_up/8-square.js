@@ -7,4 +7,5 @@ for (let i = 0; i < size; i++) {
       res += 'X';
     }
     console.log(res);
+    res = '';
 }
