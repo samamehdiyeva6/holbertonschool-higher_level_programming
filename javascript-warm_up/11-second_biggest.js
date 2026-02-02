@@ -1,4 +1,4 @@
 #!/usr/bin/node
 const list = process.argv.slice(2);
-const sorted = list.sort();
-console.log(Number(sorted[-2]));
+const sorted = list.reverse();
+console.log(Number(sorted[1]));
