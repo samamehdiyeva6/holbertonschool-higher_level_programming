@@ -34,11 +34,11 @@ def generate_invitations(template, attendees):
             
             result = result.replace(f"{{{key}}}", str(value))
         
-            filename = f"output_{index}.txt"
+        filename = f"output_{index}.txt"
     
-    try:
-        with open(filename, 'w') as file:
-            file.write(result)
-    except Exception as e:
-        print(f"Error writing file {filename}: {e}")
-        return
+        try:
+            with open(filename, 'w') as file:
+                file.write(result)
+        except Exception as e:
+            print(f"Error writing file {filename}: {e}")
+            return
