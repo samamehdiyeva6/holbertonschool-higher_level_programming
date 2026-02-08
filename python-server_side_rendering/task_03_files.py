@@ -26,7 +26,7 @@ def read_products_json(filepath):
 def read_products_csv(filepath):
     products = []
     with open(filepath, 'r',encoding="utf-8") as f:
-        data = csv.DictReader()
+        data = csv.DictReader(f)
         for row in data:
             products.append({
                 "id": int(item.get("id")),
