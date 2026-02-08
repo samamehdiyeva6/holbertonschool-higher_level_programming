@@ -29,10 +29,10 @@ def read_products_csv(filepath):
         data = csv.DictReader(f)
         for row in data:
             products.append({
-                "id": int(item.get("id")),
-                "name": item.get("name"),
-                "category": item.get("category"),
-                "price": float(item.get("price"))
+                "id": int(row.get("id")),
+                "name": row.get("name"),
+                "category": row.get("category"),
+                "price": float(row.get("price"))
             })
         return products
     
