@@ -68,3 +68,7 @@ def products():
         product_list = filtered
 
     return render_template("product_display.html", products=product_list, error=error)
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
