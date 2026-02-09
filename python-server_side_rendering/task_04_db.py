@@ -9,6 +9,7 @@ app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(BASE_DIR, "products.json")
 CSV_PATH = os.path.join(BASE_DIR, "products.csv")
+DB_PATH = os.path.join(BASE_DIR, "products.db")
 
 def read_products_json(filepath):
     with open(filepath, 'r', encoding="utf-8") as f:
@@ -37,6 +38,29 @@ def read_products_csv(filepath):
             })
         return products
     
+
+def read_products_sql(db_path):
+    """Read products from SQLite DB and return list of dicts."""
+    
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT id, name, category, price FROM Products")
+    rows = cursor.fetchall()
+    conn.close()
+
+    products = []
+    for r in rows:
+        products.append({
+            "id": int(r["id"]),
+            "name": r["name"],
+            "category": r["category"],
+            "price": float(r["price"]),
+        })
+    return products
+
+
 @app.route("/products")
 def products():
     source = request.args.get("source")
@@ -52,13 +76,7 @@ def products():
         product_list = read_products_csv(CSV_PATH)
 
     elif source == "sql":
-        conn = sqlite3.connect("products.db")
-        conn.row_factory = sqlite3.Row
-
-        cursor = conn.cursor()
-        cursor.execute("SELECT name, price, category FROM products")
-        rows = cursor.fetchall()
-        product_list= [dict(row) for row in rows]
+        product_list = read_products_sql(DB_PATH)
     else:
         error = "Wrong source"
         return render_template("product_display.html", products=[], error=error)
