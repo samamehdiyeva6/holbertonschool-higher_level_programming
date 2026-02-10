@@ -1,3 +1,3 @@
-a = int(777)
-b = int(777)
-print(a is b)
+s1 = "Best School"
+s2 = "Best School"
+print(s1 is s2)
