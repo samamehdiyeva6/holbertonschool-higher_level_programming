@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import MySQLdb
 conn = MySQLdb.connect(host="localhost", port=3306, user="sama'@'localhost", passwd="mypassword", db="hbtn_0e_0_usa")
 cur = conn.cursor()
