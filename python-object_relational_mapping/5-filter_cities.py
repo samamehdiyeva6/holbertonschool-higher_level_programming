@@ -12,7 +12,7 @@ if __name__ == "__main__":
     SELECT cities.id, cities.name, states.name
     FROM cities
     INNER JOIN states ON cities.state_id = states.id
-    GROUP BY '{}'
+    GROUP BY states.name=='{}'
     ORDER BY cities.id ASC
     """.format(sys.argv[4]))
     query_rows = cur.fetchall()
