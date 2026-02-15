@@ -9,14 +9,14 @@ if __name__ == "__main__":
                            passwd=sys.argv[2], db=sys.argv[3])
     cur = conn.cursor()
     cur.execute("""
-    SELECT cities.id, cities.name, states.name
+    SELECT cities.name
     FROM cities
     INNER JOIN states ON cities.state_id = states.id
     WHERE states.name='{}'
     ORDER BY cities.id ASC
     """.format(sys.argv[4]))
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
+    cities = [row[0] for row in cur.fetchall()]
+    print(", ".join(cities))
+
     cur.close()
     conn.close()
