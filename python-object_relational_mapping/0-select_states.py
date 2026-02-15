@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"scdhbvjsdcs"
 import MySQLdb
 conn = MySQLdb.connect(host="localhost", port=3306, user="sama'@'localhost", passwd="mypassword", db="hbtn_0e_0_usa")
 cur = conn.cursor()
@@ -8,3 +9,4 @@ for row in query_rows:
     print(row)
 cur.close()
 conn.close()
+# Testing git push alias
