@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 "vsdfsdfds"
 
-from sqlalchemy import create_engine, Column, Integer, String, sessionmaker
+from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
