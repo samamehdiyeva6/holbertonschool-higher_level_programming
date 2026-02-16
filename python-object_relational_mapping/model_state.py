@@ -10,11 +10,13 @@ engine = create_engine("sqlite:///states.db")
 
 Base.metadata.create_all(engine)
 
+
 class State(Base):
     "sdfsdfsd"
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
 
-Session = sessionmaker(bind = engine)
+
+Session = sessionmaker(bind=engine)
 session = Session()
