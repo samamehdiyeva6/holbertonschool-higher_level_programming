@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from model_state import Base
 
-engine = create_engine("sqlite://cities.db")
+engine = create_engine("sqlite:///cities.db")
 
 Base.metadata.create_all(engine)
 
