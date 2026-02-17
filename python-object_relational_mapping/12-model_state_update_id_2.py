@@ -15,7 +15,7 @@ if __name__ == "__main__":
         f"mysql+mysqldb://{username}:{password}@localhost:3306/{database}",
         pool_pre_ping=True
         )
-    
+
     Session = sessionmaker(bind=engine)
     session = Session()
 
