@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Lists all State objects from a MySQL database"""
 
+
 import sys
 from model_state import State, Base
 from model_city import City
