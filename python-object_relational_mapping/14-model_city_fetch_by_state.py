@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """Lists all State objects from a MySQL database"""
 
-
 import sys
 from model_state import State, Base
 from model_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+
 
 if __name__ == "__main__":
     username = sys.argv[1]
@@ -18,10 +18,8 @@ if __name__ == "__main__":
         f"mysql+mysqldb://{username}:{password}@localhost:3306/{database}",
         pool_pre_ping=True
         )
-
     Session = sessionmaker(bind=engine)
     session = Session()
-
 
     results = (session.query(State, City)
                .join(City, City.state_id == State.id)
