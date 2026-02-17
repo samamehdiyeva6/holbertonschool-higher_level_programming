@@ -12,6 +12,7 @@ engine = create_engine("sqlite:///cities.db")
 
 Base.metadata.create_all(engine)
 
+
 class City(Base):
     "jdsfgdf"
     __tablename__ = "cities"
@@ -19,6 +20,7 @@ class City(Base):
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
     state = relationship("State", back_populates="cities")
+
 
 Session = sessionmaker(engine)
 session = Session()
