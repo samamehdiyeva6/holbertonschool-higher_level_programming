@@ -13,6 +13,7 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database = sys.argv[3]
 
+
     engine = create_engine(
         f"mysql+mysqldb://{username}:{password}@localhost:3306/{database}",
         pool_pre_ping=True
@@ -20,6 +21,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
+
 
     results = (session.query(State, City)
                .join(City, City.state_id == State.id)
