@@ -21,8 +21,13 @@ if __name__ == "__main__":
     session = Session()
 
     states = session.query(State).order_by(State.id).all()
+    count = 0
     for state in states:
         if state.name == sys.argv[4]:
             print(state.id)
+            count += 1
+            break
+    if count == 0:
+        print("Not found")
 
     session.close()
